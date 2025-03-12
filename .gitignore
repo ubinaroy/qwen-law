@@ -1,6 +1,8 @@
 checkpoints/*
 swanlog/*
 datasets/*
+log/*
 !checkpoints/.gitkeep
 !swanlog/.gitkeep
 !datasets/.gitkeep
+!log/.gitkeep
