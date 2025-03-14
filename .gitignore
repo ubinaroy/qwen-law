@@ -2,6 +2,8 @@ checkpoints/*
 swanlog/*
 datasets/*
 log/*
+data/*
+__pycache__/*
 !checkpoints/.gitkeep
 !swanlog/.gitkeep
 !datasets/.gitkeep

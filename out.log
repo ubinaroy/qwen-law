@@ -1,0 +1,101 @@
+/data/workbench/rag.py:2: LangChainDeprecationWarning: Importing HuggingFaceEmbeddings from langchain.embeddings is deprecated. Please replace deprecated imports:
+
+>> from langchain.embeddings import HuggingFaceEmbeddings
+
+with new imports of:
+
+>> from langchain_community.embeddings import HuggingFaceEmbeddings
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.embeddings import HuggingFaceEmbeddings
+/data/workbench/rag.py:3: LangChainDeprecationWarning: Importing Chroma from langchain.vectorstores is deprecated. Please replace deprecated imports:
+
+>> from langchain.vectorstores import Chroma
+
+with new imports of:
+
+>> from langchain_community.vectorstores import Chroma
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.vectorstores import Chroma
+/data/workbench/rag.py:4: LangChainDeprecationWarning: Importing BM25Retriever from langchain.retrievers is deprecated. Please replace deprecated imports:
+
+>> from langchain.retrievers import BM25Retriever
+
+with new imports of:
+
+>> from langchain_community.retrievers import BM25Retriever
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.retrievers import BM25Retriever, EnsembleRetriever
+/data/workbench/rag.py:5: LangChainDeprecationWarning: Importing DirectoryLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import DirectoryLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import DirectoryLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.document_loaders import DirectoryLoader,PyPDFLoader,TextLoader,CSVLoader
+/data/workbench/rag.py:5: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.document_loaders import DirectoryLoader,PyPDFLoader,TextLoader,CSVLoader
+/data/workbench/rag.py:5: LangChainDeprecationWarning: Importing TextLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import TextLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import TextLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.document_loaders import DirectoryLoader,PyPDFLoader,TextLoader,CSVLoader
+/data/workbench/rag.py:5: LangChainDeprecationWarning: Importing CSVLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import CSVLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import CSVLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+  from langchain.document_loaders import DirectoryLoader,PyPDFLoader,TextLoader,CSVLoader
+/data/workbench/rag.py:19: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  self.embed_model = HuggingFaceEmbeddings(
+/data/workbench/rag.py:116: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  device="cuda" if torch.has_cuda else "cpu"
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.01it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.10s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.05it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+/data/workbench/rag.py:121: LangChainDeprecationWarning: The method `BaseRetriever.get_relevant_documents` was deprecated in langchain-core 0.1.46 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  docs = self.ensemble_retriever.get_relevant_documents(query)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+问题：小医仙是谁？
+答案：
+
+        你是一个专业助手，请严格根据以下带来源的上下文：[来源：/data/knowledge_base/ 斗破苍穹/斗破苍穹(501-1000章).txt，类型：normal]
+如雪般的长发随风轻飘，小医仙声音轻柔的道。
+　　看着面前那婀娜动人的倩影，萧炎深吸了一口气，然后缓缓抹去额头上的汗水，轻声道：“帮我拦住他一会，其余的，交给我来！”
+　　闻言，小医仙微微一怔，偏头望着青年，后者那漆黑眼眸中，此刻正跳动着一种名为疯狂的东西，这种疯狂，即便是她，都是隐隐有些心悸，这个家伙，又想干什么了？
+
+[来源：/data/knowledge_base/ 斗破苍穹/斗破苍穹(1-500章).txt，类型：normal]
+落地之后，小医仙迅速脱离了萧炎的怀抱，然后俏丽含喜的打量着洞口武动乾坤。
+　　“走吧，看看能得到点什么东西，希望不会让我失望。”
+　　对着小医仙微微一笑，萧炎从身上掏出火折子，然后率先对着漆黑的洞内小心行去武动乾坤。
+　　望了望那漆黑的山洞内部，小医仙有些踌躇，片刻后，跺了跺脚，咬着银牙，跟了上去。
+
+[来源：/data/knowledge_base/ 斗破苍穹/斗破苍穹(1-500章).txt，类型：normal]
+两人走向悬崖，目光同时望向那处有些奇怪的峭壁处，半晌后，小医仙红唇微启，有些不情愿的低声道：“那里是我在一次采药中，意外发现的东西，怪木之后，隐藏了一个难以发现的山洞。”
+　　“山洞里面，应该是某位前人所留，不过我并没有进去过，所以，对于内部，也不太清楚，可从一些痕迹来看，留下山洞的那位前人，应该很强。”
+        按步骤思考并回答：小医仙是谁？
+        如果上下文信息不足，请明确指出缺失的信息。最后用中文给出结构化答案。 根据提供的上下文信息，小医仙是《斗破苍穹》中的角色，她是萧炎的挚友和重要的盟友之一。具体来说，在萧炎与武动乾坤探索山洞时，小医仙参与了此次行动，并且提到自己曾经在采药过程中偶然发现了山洞的存在及其可能的背景。
+
+结构化答案如下：
+- 角色名称：小医仙
+- 出处作品：《斗破苍穹》
+- 关系：萧炎的挚友、盟友
+- 特征行为：参与探险，分享关于山洞的发现及推测
+- 背景：曾意外发现山洞，认为其可能与某位强大的前人有关
+
+上下文提供了足够的信息来回答小医仙的身份及相关特征，无需额外补充缺失信息。以上信息基于给定的文本内容进行总结和归纳。[来源：/data/knowledge_base/ 斗破苍穹/斗破苍穹(501-1000章).txt 和 /data/knowledge_base/ 斗破苍穹/斗破苍穹(1-500章).txt]。
